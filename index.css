@@ -461,7 +461,7 @@
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
-  margin: 2rem 0;
+  margin: 5rem 0;
   font-size: 40px;
 }
 
@@ -542,6 +542,9 @@
     align-items: center;
     gap: 2rem;
   }
+  .aboutCont p {
+    margin: 0 !important;
+  }
   .about {
     flex-direction: column;
     text-align: center;
@@ -554,6 +557,9 @@
 
   .aboutCont h3 {
     font-size: 35px;
+  }
+  .secondCont h1 {
+    margin-bottom: 6rem;
   }
 
   .skillsCont {
@@ -707,6 +713,7 @@
   .projectName {
     text-align: center;
     margin-top: 1rem;
+    margin-bottom: 0rem;
   }
 
   .btnProjectCont {
