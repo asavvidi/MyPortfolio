@@ -445,7 +445,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 .projects h1 {
   font-size: 62px;
@@ -622,6 +622,10 @@
     align-items: center;
     gap: 2rem;
   }
+
+  .aboutCont p {
+    margin: 0 !important;
+  }
   .about {
     flex-direction: column;
     text-align: center;
@@ -643,6 +647,10 @@
     align-items: center;
   }
 
+  .skillsTitle {
+    margin-bottom: 1rem !important;
+  }
+
   .skillsTitle h1 {
     font-size: 42px;
   }
@@ -662,6 +670,10 @@
   .secondCont {
     width: 100%;
     text-align: center;
+
+    & h1 {
+      margin-bottom: 2rem;
+    }
   }
 
   .bar {
@@ -680,6 +692,7 @@
   .radialBar {
     width: 80%;
     height: auto;
+    margin-top: 2rem;
   }
 
   .radialBar svg {
