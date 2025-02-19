@@ -1,0 +1,702 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.headerCont {
+  display: flex;
+  width: 100%;
+  padding: 2rem 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+  align-items: center;
+
+  & .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+    & span {
+      color: blue;
+    }
+  }
+  & .logo:hover {
+    color: blue;
+    text-shadow: 0 0 25px rgba(0, 0, 255, 0.6), 0 0 50px rgba(0, 0, 255, 0.7);
+    transform: scale(1.1);
+  }
+  & .navCont {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  & .navCont a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s all ease-in-out;
+  }
+
+  & .navCont a:hover,
+  .navCont a.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+  }
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 12% 0;
+}
+
+.homeCont {
+  max-width: 800px;
+
+  & h3 {
+    font-size: 42px;
+  }
+  & h1 {
+    font-size: 62px;
+    line-height: 1.2;
+    & span {
+      color: blue;
+    }
+  }
+  & p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+  }
+}
+
+.btnBox {
+  width: 345px;
+  display: flex;
+  gap: 2rem;
+
+  & .btn-1 {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+  }
+
+  .btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+
+  & .btn-2 {
+    padding: 1rem 2rem;
+    background-color: blue;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+  }
+
+  & .btn-2:hover {
+    color: blue;
+    background-color: white;
+    border: 2px solid blue;
+  }
+}
+
+.imgBox img {
+  border-radius: 50%;
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: black;
+
+  & .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+
+    & a {
+      font-size: 24px;
+      color: white;
+      width: 40px;
+      height: 40px;
+      line-height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+      margin: 0 8px;
+      box-shadow: inset 0 0 10px blue, 0 0 10px blue;
+      transition: 0.3s all ease-in-out;
+    }
+    & a:hover {
+      transform: scale(1.2) translateY(-10px);
+      color: blue;
+    }
+  }
+
+  & ul {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+    & li {
+      display: inline-block;
+      padding: 0 15px;
+    }
+
+    & li a {
+      color: white;
+      border-bottom: 3px solid transparent;
+      transition: 0.3s all ease-in-out;
+    }
+    & li a:hover {
+      border-bottom: 3px solid blue;
+    }
+  }
+
+  & .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 8%;
+  gap: 10em;
+  background: black;
+}
+
+.aboutImg img {
+  position: relative;
+  width: 550px;
+  box-shadow: 0 0 25px blue, 0 0 50px blue;
+  border-radius: 50%;
+}
+
+.aboutCont h2 {
+  text-align: left;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.aboutCont h3 {
+  font-size: 50px;
+  color: white;
+  & span {
+    color: blue;
+  }
+}
+
+.aboutCont p {
+  color: white;
+  font-size: 20px;
+  margin: 2em 0 3em;
+  text-align: justify;
+}
+
+.skills {
+  background-color: #081b29;
+  color: white;
+  padding: 2rem 5%;
+  min-height: 100vh;
+}
+
+.skillsTitle {
+  text-align: center;
+  font-size: 52px;
+  margin: 50px 0;
+  & span {
+    color: blue;
+  }
+}
+
+.skillsCont {
+  display: flex;
+  justify-content: space-between;
+}
+.firstCont {
+  width: 600px;
+  margin-top: 30px;
+}
+.heading {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+.bar {
+  font-size: 23px;
+}
+
+.techBar .bar {
+  margin: 40px 0;
+}
+
+.techBar .bar .info {
+  margin-bottom: 5px;
+}
+.techBar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+
+.techBar .bar .progressLine {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  overflow: hidden;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.techBar .bar .progressLine span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progressLine.html span {
+  width: 80%;
+}
+
+.progressLine.css span {
+  width: 70%;
+}
+
+.progressLine.js span {
+  width: 85%;
+}
+
+.progressLine.nodejs span {
+  width: 80%;
+}
+
+.progressLine.react span {
+  width: 70%;
+}
+
+.progressLine.django span {
+  width: 20%;
+}
+
+.secondCont {
+  width: 600px;
+  margin-top: 30px;
+}
+.radialBars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 3rem;
+
+  & .radialBar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      width: 120px;
+      height: 160px;
+    }
+    & .progressBar {
+      stroke-width: 10;
+      stroke: black;
+      fill: transparent;
+      stroke-dashoffset: 502;
+      stroke-dasharray: 502;
+      stroke-linecap: round;
+      animation: animate-bar 1s linear forwards;
+    }
+  }
+}
+
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+
+.path {
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+.path2 {
+  animation: animate-path2 1s 1s linear forwards;
+}
+.path3 {
+  animation: animate-path3 1s 1s linear forwards;
+}
+.path4 {
+  animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+
+.radialBar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.progressBar .text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  border-bottom: -5px;
+  transform: translateX(-50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+.projects {
+  background-color: #081b29;
+  color: white;
+  padding: 2rem 5%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects h1 {
+  font-size: 62px;
+  width: 100%;
+  text-align: center;
+
+  & span {
+    color: blue;
+  }
+}
+.projectName {
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  margin: 2rem 0;
+  font-size: 40px;
+}
+
+.projectCont video {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.projectList {
+  margin-bottom: 4rem;
+  padding-left: 20px;
+
+  & li {
+    list-style-type: disc !important;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+}
+
+.projectTech {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.btnProjectCont {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-top: 2rem;
+}
+
+.btnProject {
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.btnProject:hover {
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .homeCont h1 {
+    font-size: 40px;
+  }
+
+  .btnBox {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imgBox img {
+    width: 300px;
+  }
+  .aboutCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 5% 10%;
+  }
+  .aboutImg img {
+    width: 250px;
+  }
+
+  .aboutCont h3 {
+    font-size: 35px;
+  }
+
+  .skillsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .firstCont {
+    width: 100%;
+  }
+  .secondCont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .projectName {
+    text-align: center;
+  }
+
+  .btnProjectCont {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerCont {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    & a {
+      font-size: 2rem !important;
+    }
+  }
+  .navCont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & a {
+      font-size: 1.5rem !important;
+    }
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .homeCont h1 {
+    font-size: 40px;
+  }
+
+  .btnBox {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imgBox img {
+    width: 300px;
+  }
+  .aboutCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 5% 10%;
+  }
+  .aboutImg img {
+    width: 250px;
+  }
+
+  .aboutCont h3 {
+    font-size: 35px;
+  }
+
+  .skillsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .skillsTitle h1 {
+    font-size: 42px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .skillsCont {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .firstCont {
+    width: 100%;
+  }
+  .secondCont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bar {
+    font-size: 18px;
+  }
+
+  .techBar .bar .progressLine {
+    height: 3px;
+  }
+
+  .radialBars {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radialBar {
+    width: 80%;
+    height: auto;
+  }
+
+  .radialBar svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .percentage {
+    font-size: 14px;
+  }
+
+  .projectName {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .btnProjectCont {
+    justify-content: center;
+  }
+}
