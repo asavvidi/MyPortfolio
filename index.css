@@ -396,7 +396,7 @@
 
 @keyframes animate-path1 {
   100% {
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 100;
   }
 }
 @keyframes animate-path2 {
@@ -411,7 +411,7 @@
 }
 @keyframes animate-path4 {
   100% {
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 100;
   }
 }
 
