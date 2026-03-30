@@ -324,7 +324,7 @@
 }
 
 .progressLine.spring span {
-  width: 85%;
+  width: 92%;
 }
 
 .progressLine.react span {
@@ -332,15 +332,11 @@
 }
 
 .progressLine.js span {
-  width: 78%;
+  width: 82%;
 }
 
 .progressLine.nodejs span {
   width: 80%;
-}
-
-.progressLine.django span {
-  width: 20%;
 }
 
 .secondCont {
