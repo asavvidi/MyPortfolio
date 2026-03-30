@@ -331,6 +331,10 @@
   width: 82%;
 }
 
+.progressLine.python span {
+  width: 88%;
+}
+
 .progressLine.js span {
   width: 82%;
 }
