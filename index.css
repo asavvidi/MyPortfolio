@@ -319,16 +319,24 @@
   width: 70%;
 }
 
-.progressLine.js span {
+.progressLine.java span {
+  width: 92%;
+}
+
+.progressLine.spring span {
   width: 85%;
+}
+
+.progressLine.react span {
+  width: 82%;
+}
+
+.progressLine.js span {
+  width: 78%;
 }
 
 .progressLine.nodejs span {
   width: 80%;
-}
-
-.progressLine.react span {
-  width: 70%;
 }
 
 .progressLine.django span {
